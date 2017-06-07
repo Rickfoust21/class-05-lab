@@ -42,7 +42,9 @@ testSum(4, 7);
 
 /* Problem 2
 
-Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+//Write a function called multiply() that takes in two numbers as arguments and returns an array where the first //element is the product of those numbers, and the second element is a string that EXACTLY follows this example and //uses the values that were input into the function:
+
+
 
 
 
@@ -56,7 +58,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function multiply(number1, number2) {
+  var totalProduct = number1 * number2;
+  var longAnswer = 'The product of ' + number1 +' and ' + number2 +' is ' + totalProduct + '.';
+  var totalAnswer = [totalProduct, longAnswer];
 
+  return totalAnswer;
+}
 
 // Here is the test for multiply(); uncomment it to run it
 

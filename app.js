@@ -95,8 +95,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 
 // Write your code here
-
-
+function sumAndMultiply(x,y,z) {
+  return [
+    x+y+z,
+    x*y*z,
+    x + ' and ' + y + ' and ' + z + ' sum to ' + (x+y+z) + '.',
+    'The product of ' + x + ' and ' + y + ' and ' + z + ' is ' + (x*y*z) + '.'
+  ];
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 

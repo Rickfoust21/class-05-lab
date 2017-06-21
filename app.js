@@ -24,7 +24,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(input1, input2) {
   //present 'textForUser'to user
   var total = input1 + input2;
-  var stringSum = 'The sum of ' +input1 +' and ' +input2 +' is 11.';
+  var stringSum = 'The sum of ' + input1 + ' and ' + input2 + ' is 11.';
   var results = [total, stringSum];
 
   return results;
@@ -60,7 +60,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 function multiply(number1, number2) {
   var totalProduct = number1 * number2;
-  var longAnswer = 'The product of ' + number1 +' and ' + number2 +' is ' + totalProduct + '.';
+  var longAnswer = 'The product of ' + number1 + ' and ' + number2 + ' is ' + totalProduct + '.';
   var totalAnswer = [totalProduct, longAnswer];
 
   return totalAnswer;
@@ -97,10 +97,10 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(x,y,z) {
   return [
-    x+y+z,
-    x*y*z,
-    x + ' and ' + y + ' and ' + z + ' sum to ' + (x+y+z) + '.',
-    'The product of ' + x + ' and ' + y + ' and ' + z + ' is ' + (x*y*z) + '.'
+    x + y + z,
+    x * y * z,
+    x + ' and ' + y + ' and ' + z + ' sum to ' + (x + y + z) + '.',
+    'The product of ' + x + ' and ' + y + ' and ' + z + ' is ' + (x * y * z) + '.'
   ];
 }
 
@@ -132,40 +132,37 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
-testArray = [2,3,4];
+function sumArray(add){
+  var sum = add[0] + add[1] + add[2];
 
+  return [sum, add[0] + ',' + add[1] + ',' + add[2] + ' was passed in as an array of numbers, and ' + sum + ' is their sum.'];
 
+}
 
+sumArray([2,3,4]);
+
+var testArray = [2,3,4];
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
 
-
-
 // Once you get the test passing, do an a-c-p cycle.
-
-
 
 /////////////////////////////////////
 
 /* Problem 5
-
 Write a function called multiplyArray() that takes an array of numbers as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
-
-
-
 "The numbers 2,3,4 have a product of 24."
-
-
-
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-
-
 // Write your code here
+function multiplyArray(product){
+  var start = product[0] * product[1] * product[2];
 
+  return [start, 'The numbers ' + product[0] + ',' + product[1] + ',' + product[2] + ' have a product of ' + start + '.'];
+};
 
-
+multiplyArray(2,3,4);
 // Here is the test for multiplyArray(); uncomment it to run it
 
 testMultiplyArray(testArray);
